@@ -8,7 +8,7 @@ export const Cart = () => {
 
   return (
     <div className="Cart">
-      <div className="container mx-auto my-10">
+      <div className="container mx-auto my-10 px-5">
         <h1 className="mb-10 text-3xl text-center font-bold">Cart</h1>
         <div className="">
           <table className="table-auto w-full">

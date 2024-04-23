@@ -14,10 +14,10 @@ export const SingleProduct = () => {
   return (
     <>
     <div className="SingleProduct">
-      <div className="container m-auto">
+      <div className="container m-auto my-10 px-5">
         {
             data && (
-        <div className="grid md:grid-cols-2 grid-cols-1 gap-10 my-10">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-10 mb-5">
           <div className="image">
             <img src={data?.image} className="w-full aspect-square m-auto object-contain" alt="" />
           </div>

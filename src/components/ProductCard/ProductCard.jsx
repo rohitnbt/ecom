@@ -7,7 +7,7 @@ export const ProductCard = ({ item }) => {
   const navigate = useNavigate();
   return (
     <div className="ProductCard rounded border drop-shadow w-[calc(50% - 20px)] h-full p-2 flex flex-col justify-between bg-white">
-      <div onClick={() => navigate(`./singleProduct/${item.id}`)}>
+      <div onClick={() => navigate(`/singleProduct/${item.id}`)}>
         <img
           src={item.image}
           className="aspect-video rounded object-contain w-full"

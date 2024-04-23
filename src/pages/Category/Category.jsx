@@ -8,7 +8,7 @@ export const Category = () => {
     const {data, loading} = useFetch(`/products/category/${category}`);
   return (
     <div className='Category'>
-        <div className="container mx-auto my-10">
+        <div className="container mx-auto my-10 px-5">
         <h1 className='mb-10 text-3xl text-center font-bold capitalize'>{category}</h1>
             <div className='xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid grid-cols-1 gap-4'>
                 {

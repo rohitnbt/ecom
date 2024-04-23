@@ -8,6 +8,7 @@ import { Home } from './pages/Home/Home';
 import { SingleProduct } from './pages/SingleProduct/SingleProduct';
 import { Cart } from './pages/Cart/Cart';
 import { Category } from './pages/Category/Category';
+import { Profile } from './pages/Profile/Profile';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path='/singleProduct/:id' element={<SingleProduct />} />
       <Route path='/cart' element={<Cart />} />
       <Route path='/category/:category' element={<Category />} />
+      <Route path="/profile" element={<Profile />}/>
     </Routes>
     <Footer />
     </BrowserRouter>

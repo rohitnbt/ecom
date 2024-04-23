@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { IoIosAdd } from "react-icons/io";
 import { IoIosRemove } from "react-icons/io";
-import axios from "axios";
 
 export const Quantity = ({ quantity }) => {
   const [count, setCount] = useState(quantity);

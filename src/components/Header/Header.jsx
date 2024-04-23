@@ -1,5 +1,6 @@
 import React from 'react'
 import { IoMdCart } from "react-icons/io";
+import { HiOutlineUserCircle } from "react-icons/hi2";
 import { Logo } from '../Icons/Logo';
 import { useFetch } from '../../hooks/useFetch';
 import { Link, useNavigate } from 'react-router-dom';
@@ -22,21 +23,21 @@ export const Header = () => {
                     <Link to={"./category/men's clothing"} className=' border-b border-transparent hover:border-white transition-all duration-300 ease-in-out'>Men</Link>
                     <Link to={"./category/women's clothing"} className=' border-b border-transparent hover:border-white transition-all duration-300 ease-in-out'>Women</Link>
                 </div>
-                <div className="cart w-[100px] text-right">
+                <div className="cart flex items-center gap-3 justify-end w-[100px] text-right">
                     
-                    <button className="py-4 px-1 relative border-2 border-transparent rounded-full" aria-label="Cart" onClick={()=>navigate("/cart")}>
+                    <button className="py-4 px-1 relative border-transparent outline-none" aria-label="Cart" onClick={()=>navigate("/cart")}>
                         <IoMdCart className='w-[25px] h-auto ml-auto'/>
                         {
                             data?.products.length > 0 && (
                         
-                        <span className="absolute inset-0 object-right-top -mr-6">
-                            <div className="inline-flex items-center px-1.5 py-0.5 rounded-full text-xs font-semibold leading-4 bg-pink-950 text-white">
+                            <div className="inline-flex items-center px-1.5 py-0.5 rounded-full text-xs font-semibold leading-4 bg-pink-950 text-white absolute top-2 -right-2">
                             {data?.products.length}
                             </div>
-                        </span>
                             )
                         }
                     </button>
+
+                    <span onClick={()=>navigate("/profile")}><HiOutlineUserCircle className='size-[25px]'/></span>
                 </div>
             </div>
         </div>
